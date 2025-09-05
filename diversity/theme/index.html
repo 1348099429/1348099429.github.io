@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    
+    <title>主题选择 | Diversity</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="YANG ZhiKai">
+    
+    <meta name="description" content="博客多样性，一款多主题自由切换的Hexo主题">
+    
+    
+    <meta property="og:title" content="Diversity"/>
+    <meta property="og:site_name" content="Yzk&#39;s Blog"/>
+    
+    <meta property="og:image" content="/images/diversity.png" />
+    
+
+    
+    <link rel="shortcut icon" href="/images/diversity.ico">
+    
+
+    
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    
+<script src="/js/jquery-3.6.0.min.js"></script>
+
+    
+<script src="/js/js.cookie-2.2.1.min.js"></script>
+
+
+    <script>
+        // 全局配置数据
+        var config = new Object();
+        config.themes = JSON.parse('["landscape","next","butterfly"]');
+        config.ports = JSON.parse('[]');
+        config.source = JSON.parse('{"landscape":"https://github.com/hexojs/hexo-theme-landscape","phase":"https://github.com/hexojs/hexo-theme-phase","light":"https://github.com/hexojs/hexo-theme-light"}');
+        config.page = JSON.parse('{"blog_scroll_height":200}');
+        config.back2top = JSON.parse('{"enable":true,"enable_scroll_percent":false,"scroll_percent":5,"position":"right","color":"#fc6423","exclude":["next"]}');
+        config.menu = JSON.parse('{"blog":"/diversity/blog/","theme":"/diversity/theme/"}');
+        config.button = new Object();
+        config.button.theme_default = 'DEFAULT';
+        config.button.cancel_defalut = 'CANCEL';
+        config.button.theme_redirect = 'REDIRECT';
+        config.button.theme_source = 'SOURCE';
+        config.gritter = new Object();
+        config.gritter.title_theme = 'Theme [{0}]';
+        config.gritter.text_configured = 'Configured';
+        config.gritter.text_canceled = 'Cancelled';
+        config.gritter.text_clicktojump = 'Click here';
+        config.introduction = new Object();
+          
+        config.introduction['landscape'] = 'A brand new default theme for Hexo.';
+          
+        config.introduction['next'] = 'A high quality elegant Hexo theme. It is crafted from scratch with love.';
+          
+        config.introduction['butterfly'] = 'introduction.butterfly';
+        
+        config.no_theme = new Object();
+        config.no_theme.back_image = '/images/back.jpg';
+        config.no_theme.tip_text = 'Default theme not set up! Click the button below to configure now.';
+        config.no_theme.btn_text = 'Theme Select';
+    </script>
+
+    
+<script src="/js/diversity.js"></script>
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+<body>
+    <div id="container">
+        <header id="header" class="wrapper">
+	<div id="header-inner" class="inner">
+		<h1 id="logo-wrap">
+		  	<a href="/" id="logo">Diversity</a>
+		</h1>
+		<ul id="main-nav">
+			<li class="main-nav-li"><a href="/diversity/blog/" class="main-nav-link">Blog</a></li><li class="main-nav-li"><a href="/diversity/theme/" class="main-nav-link">Theme</a></li>
+		</ul>
+
+		<a id="mobile-nav-toggle">
+			<span class="mobile-nav-toggle-bar"></span>
+			<span class="mobile-nav-toggle-bar"></span>
+			<span class="mobile-nav-toggle-bar"></span>
+		</a>
+	</div>
+</header>
+        <div class="theme-wrap">
+    <div class="theme-inner">
+        
+        
+        
+        <div class="ring" style="cursor: grab; transform: rotateY(180deg);">
+     
+    <div class="img rotate-10-0" style="background-image: url(&quot;/images/default-9.jpg&quot;);"></div>
+     
+    <div class="img rotate-10-1" style="background-image: url(&quot;/images/default-7.jpg&quot;);"></div>
+     
+    <div class="img rotate-10-2" style="background-image: url(&quot;/images/default-2.jpg&quot;);"></div>
+     
+    <div class="img rotate-10-3" style="background-image: url(&quot;/images/default-8.jpg&quot;);"></div>
+    
+    <div class="img rotate-10-4 card">
+        <div class="card-back card-container" style="background-image: url(&quot;/images/back.jpg&quot;);">
+            <div class="top">
+                <h1>Landscape</h1>
+            </div>
+            <p class="middle text">
+               A brand new default theme for Hexo.
+            </p>
+            <p class="bottom" theme="landscape">
+                <button class="theme-default btn btn-primary">DEFAULT</button>
+                <button class="theme-redirect btn btn-primary">REDIRECT</button>
+                <button class="theme-source btn btn-primary">SOURCE</button>
+            </p>
+        </div>
+        <div class="card-front" style="background-image: url(&quot;/images/landscape.jpg&quot;);"></div>
+    </div>
+    
+    
+    <div class="img rotate-10-5 card">
+        <div class="card-back card-container" style="background-image: url(&quot;/images/back.jpg&quot;);">
+            <div class="top">
+                <h1>Next</h1>
+            </div>
+            <p class="middle text">
+               A high quality elegant Hexo theme. It is crafted from scratch with love.
+            </p>
+            <p class="bottom" theme="next">
+                <button class="theme-default btn btn-primary">DEFAULT</button>
+                <button class="theme-redirect btn btn-primary">REDIRECT</button>
+                <button class="theme-source btn btn-primary">SOURCE</button>
+            </p>
+        </div>
+        <div class="card-front" style="background-image: url(&quot;/images/default.png&quot;);"></div>
+    </div>
+    
+    
+    <div class="img rotate-10-6 card">
+        <div class="card-back card-container" style="background-image: url(&quot;/images/back.jpg&quot;);">
+            <div class="top">
+                <h1>Butterfly</h1>
+            </div>
+            <p class="middle text">
+               
+            </p>
+            <p class="bottom" theme="butterfly">
+                <button class="theme-default btn btn-primary">DEFAULT</button>
+                <button class="theme-redirect btn btn-primary">REDIRECT</button>
+                <button class="theme-source btn btn-primary">SOURCE</button>
+            </p>
+        </div>
+        <div class="card-front" style="background-image: url(&quot;/images/default.png&quot;);"></div>
+    </div>
+    
+     
+    <div class="img rotate-10-7" style="background-image: url(&quot;/images/default-10.jpg&quot;);"></div>
+     
+    <div class="img rotate-10-8" style="background-image: url(&quot;/images/default-4.jpg&quot;);"></div>
+     
+    <div class="img rotate-10-9" style="background-image: url(&quot;/images/default-3.jpg&quot;);"></div>
+    
+</div>
+        
+<script src="/js/gsap-3.6.1.min.js"></script>
+
+        
+<script src="/js/theme-rotate.js"></script>
+
+        
+    </div>
+    
+    
+    <div class="arrow-wrap">
+        <div class="left-arrow"></div>
+        <div class="right-arrow"></div>
+    </div>
+    
+</div>
+
+<footer id="theme-footer">
+    <p>
+        
+        &copy; 2025 YANG ZhiKai
+         
+    </p>
+    <p>
+        Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>, <a href="https://github.com/huazie/hexo-theme-diversity" target="_blank">Diversity</a>
+    </p>
+</footer>
+
+<script src="/js/jquery.gritter-1.7.4.min.js"></script>
+
+
+<script src="/js/theme.js"></script>
+
+    </div>
+    <div id="mobile-nav-dimmer"></div>
+    <nav id="mobile-nav">
+    <div id="mobile-nav-inner">
+        <ul id="mobile-nav-list">
+            <li class="mobile-nav-li"><a href="/diversity/blog/" class="mobile-nav-link">Blog</a></li><li class="mobile-nav-li"><a href="/diversity/theme/" class="mobile-nav-link">Theme</a></li>
+        </ul>
+    </div>
+</nav>
+    <!-- 导航栏 -->
+
+<script src="/js/nav.js"></script>
+
+</body>
+</html>
